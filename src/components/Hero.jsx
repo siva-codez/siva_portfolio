@@ -147,7 +147,7 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
+    <section id="home" className="relative min-h-[85vh] sm:min-h-screen flex items-center overflow-hidden">
       <GridBackground />
 
       {/* Mobile background photo with dark overlay */}
@@ -155,12 +155,12 @@ export default function Hero() {
         <img
           src={sivaImage}
           alt="Siva Arumuga Perumal S"
-          className="w-full h-full object-cover object-top opacity-20 filter blur-[1px]"
+          className="w-full h-full object-cover object-top opacity-40 filter blur-[1px]"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#07090D]/85 via-[#07090D]/95 to-[#07090D]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#07090D]/75 via-[#07090D]/90 to-[#07090D]" />
       </div>
 
-      <div className="section-container relative z-10 w-full pt-20 pb-12 sm:pt-24 sm:pb-16">
+      <div className="section-container relative z-10 w-full pt-16 pb-6 sm:pt-24 sm:pb-16">
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* Left Content */}
           <div className="flex flex-col gap-6 lg:gap-8">

@@ -40,11 +40,24 @@ export default function Navbar() {
 
   const scrollTo = (href) => {
     const id = href.replace("#", "");
-    const el = document.getElementById(id);
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth" });
+    const el = id === "home" ? null : document.getElementById(id);
+
+    if (isMenuOpen) {
+      setIsMenuOpen(false);
+      setTimeout(() => {
+        if (href === "#home") {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        } else if (el) {
+          el.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 200);
+    } else {
+      if (href === "#home") {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      } else if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
     }
-    setIsMenuOpen(false);
   };
 
   return (
