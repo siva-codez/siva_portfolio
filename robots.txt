@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://siva-portfolio-chi.vercel.app/sitemap.xml
