@@ -1,3 +1,5 @@
+import opticropImg from "../assets/project/Opticrop_Image.png";
+
 export const projects = [
   {
     id: 1,
@@ -9,15 +11,24 @@ export const projects = [
       "Farmers struggle with low yields due to poor crop selection and lack of data-driven insights.",
     solution:
       "Built an ML pipeline that processes multi-dimensional agricultural data and delivers actionable crop recommendations.",
-    technologies: ["Python", "Scikit-learn", "Pandas", "NumPy", "Flask", "React"],
+    technologies: ["React",
+    "Tailwind CSS",
+    "Python",
+    "Scikit-learn",
+    "TensorFlow",
+    "CNN",
+    "OpenAI API",
+    "Weather API",
+    "Node.js",
+    "Express.js"],
     category: ["ai-ml"],
     featured: true,
-    github: "[GITHUB URL]",
-    demo: "[PROJECT DEMO]",
-    image: null,
-    outcome: "Achieved 91% recommendation accuracy on test dataset with 5-fold cross-validation",
-    model: "Random Forest + Gradient Boosting Ensemble",
-    dataset: "Agricultural soil and climate dataset",
+    github: "https://github.com/siva-codez/opticrop",
+    demo: "https://opticrop-ochre.vercel.app/",
+    image: opticropImg,
+    outcome: "Developed and deployed a full-stack AI agriculture platform that integrates crop recommendation, disease detection, AI assistance, weather intelligence, and fertilizer recommendation into a single responsive web application.",
+    model: "Machine Learning for Crop Recommendation + CNN for Rice Disease Detection",
+    dataset: "Agricultural crop recommendation dataset and rice plant disease image dataset",
   },
   {
     id: 2,
